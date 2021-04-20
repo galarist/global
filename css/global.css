@@ -8,9 +8,6 @@
 }
 
 body {
-  background: rgba(44, 100, 180, 0.8);
-  background: #3F5170;
-  background: #d6d6d6;
   background: #e2e2e2;
 }
 
@@ -19,8 +16,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
-  background-color: #24252a;
-  background: #d6d6d6;
   background: #e2e2e2;
   font-size: 12pt;
 }
