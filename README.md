@@ -2,6 +2,10 @@
 
 ## Import CSS
 #### HTML:
-```<link rel="stylesheet" href="https://galarist.github.io/global/css/global.css">```
+```
+<link rel="stylesheet" href="https://galarist.github.io/global/css/global.css">
+```
 #### CSS:
-```@import url("https://galarist.github.io/global/css/global.css");```
+```
+@import url("https://galarist.github.io/global/css/global.css");
+```
