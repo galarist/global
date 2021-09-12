@@ -1,11 +1,11 @@
 # global
 
 ## Import CSS
-#### HTML:
+**HTML:**
 ```
 <link rel="stylesheet" href="https://galarist.github.io/global/css/global.css">
 ```
-#### CSS:
+**CSS:**
 ```
 @import url("https://galarist.github.io/global/css/global.css");
 ```
