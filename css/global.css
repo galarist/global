@@ -86,6 +86,14 @@ body {
   flex-direction: column-reverse;
 }
 
+.gridish>* {
+  flex: 1 1 10em;
+}
+
+.even-columns>* {
+  flex-basis: 100%;
+}
+
 .col {
   width: 250px;
   min-height: 50px;
@@ -96,8 +104,4 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--clr-primary);
-}
-
-.even-columns > * {
-  flex-basis: 100%;
 }
