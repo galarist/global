@@ -1,43 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  background-size:cover;
-  background-position:center;
+}
+
+:root {
+  --f-primary: basic-sans, sans-serif;
+  --clr-primary: rgb(61, 61, 61);
+  --clr-bg: #e2e2e2;
+  --bg-primary: #818cab;
+  --space: 1rem;
+  --b-radius: 3px;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
 }
 
 body {
-  background: #e2e2e2;
+  background: var(--clr-bg);
+  margin: 0;
+  padding: 0;
 }
 
-header {
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #3F5170;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3F5170;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3F5170;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #3F5170;
+}
+
+.flex {
   display: flex;
-  justify-content: flex-end;
+  gap: .4em;
+}
+
+.iflex {
+  display: inline-flex;
+  gap: 1em;
+}
+
+.fcr {
+  justify-content: center;
   align-items: center;
-  padding: 30px 10%;
-  background: #e2e2e2;
-  font-size: 12pt;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 5px;
+.wrap {
+  flex-wrap: wrap;
 }
 
-h3 {
-  margin: 10px 2px;
+.sa {
+  justify-content: space-around;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #3F5170;
+.row {
+  flex-direction: row;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #3F5170;
+
+.row-rvr {
+  flex-direction: row-reverse;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: #3F5170;
+
+.column {
+  flex-direction: column;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #3F5170;
+
+.column-rvr {
+  flex-direction: column-reverse;
+}
+
+.col {
+  width: 250px;
+  min-height: 50px;
+  height: auto;
+  margin: .2em 0;
+  background-color: var(--bg-primary);
+  border-radius: var(--b-radius);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--clr-primary);
+}
+
+.even-columns > * {
+  flex-basis: 100%;
 }
