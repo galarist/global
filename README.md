@@ -1,6 +1,6 @@
 # global
 
-## Import CSS
+## Getting Started
 **HTML:**
 ```
 <link rel="stylesheet" href="https://galarist.github.io/global/css/global.css">
