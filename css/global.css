@@ -11,6 +11,7 @@
   --bg-primary: #818cab;
   --space: 1rem;
   --b-radius: 3px;
+  --flex: 15em;
 }
 
 [data-theme="dark"] {
@@ -87,7 +88,7 @@ body {
 }
 
 .gridish>* {
-  flex: 1 1 10em;
+  flex: 1 1 var(--flex);
 }
 
 .even-columns>* {
